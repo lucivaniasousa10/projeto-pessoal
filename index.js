@@ -66,8 +66,8 @@ function adicionarAgenda() {
 // notas
 function adicionarNota() {
     let tipo = prompt("Digite o tipo da nota: ")
-    let valor = Number(prompt("Digite o valor: "))
-    let meta = Number(prompt("Digite a meta (opcional): "))
+    let valor = parseFloat(prompt("Digite o valor: "))
+    let meta = parseFloat(prompt("Digite a meta (opcional): "))
 
     let novaNota = { tipo, valor, meta }
     notas.push(novaNota)
